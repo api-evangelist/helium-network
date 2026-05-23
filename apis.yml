@@ -1,0 +1,123 @@
+aid: helium-network
+url: https://raw.githubusercontent.com/api-evangelist/helium-network/refs/heads/main/apis.yml
+name: Helium Network
+kind: company
+description: >-
+  Helium operates two decentralized wireless networks - a global LoRaWAN network
+  for low-power IoT devices and a cellular + Wi-Fi offload network for mobile
+  connectivity (Helium Mobile). The network is settled on the Solana blockchain
+  with HNT, IOT, and MOBILE tokens. Developer surface includes the Helium Console
+  / LoRaWAN Network Server APIs used to onboard devices and stream uplinks,
+  on-chain Solana programs for the Helium DAO and rewards, the open-source
+  Helium-Program-Library and helium-wallet SDKs, and partner-operated Network
+  Servers (e.g. Nova Labs, MeteoScientific).
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Wireless
+  - IoT
+  - LoRaWAN
+  - 5G
+  - DePIN
+  - Solana
+  - Crypto
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: helium-network:console-lns
+    name: Helium Console / LoRaWAN Network Server API
+    description: >-
+      REST + WebSocket / MQTT integration surface exposed by Helium-compatible
+      LoRaWAN Network Servers (e.g. Nova Labs Console) for provisioning IoT
+      devices, managing organizations and labels, configuring integrations, and
+      receiving uplink and join events from end devices on the Helium IoT
+      network.
+    humanURL: https://docs.helium.com/iot/lorawan-network-servers
+    baseURL: https://docs.helium.com/iot/lorawan-network-servers
+    tags:
+      - IoT
+      - LoRaWAN
+      - Devices
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://docs.helium.com/iot/lorawan-network-servers
+  - aid: helium-network:helium-program-library
+    name: Helium Program Library (Solana)
+    description: >-
+      Open-source Solana on-chain programs and TypeScript client SDKs powering
+      the Helium DAO, sub-DAOs, HNT / IOT / MOBILE token emissions, hotspot
+      onboarding (HEM), and rewards distribution. Used by integrators that need
+      to read or write Helium on-chain state.
+    humanURL: https://github.com/helium/helium-program-library
+    baseURL: https://github.com/helium/helium-program-library
+    tags:
+      - Solana
+      - Smart Contracts
+      - SDK
+      - TypeScript
+    properties:
+      - type: Repository
+        url: https://github.com/helium/helium-program-library
+  - aid: helium-network:helium-wallet-rs
+    name: Helium Wallet CLI (Rust)
+    description: >-
+      Reference Rust command-line wallet for managing Helium accounts, tokens,
+      and hotspot operations on Solana. Used by hotspot operators and
+      integrators.
+    humanURL: https://github.com/helium/helium-wallet-rs
+    baseURL: https://github.com/helium/helium-wallet-rs
+    tags:
+      - Wallet
+      - CLI
+      - Rust
+      - Solana
+    properties:
+      - type: Repository
+        url: https://github.com/helium/helium-wallet-rs
+  - aid: helium-network:proto
+    name: Helium Protobuf Definitions
+    description: >-
+      Canonical protocol buffer definitions for Helium message formats used
+      across packet routing, oracles, and rewards. Required when implementing
+      Helium-compatible services or tooling.
+    humanURL: https://github.com/helium/proto
+    baseURL: https://github.com/helium/proto
+    tags:
+      - Protobuf
+      - Protocol
+      - Schemas
+    properties:
+      - type: Repository
+        url: https://github.com/helium/proto
+  - aid: helium-network:docs-repo
+    name: Helium Documentation Repository
+    description: >-
+      Source repository for docs.helium.com, covering the Mobile and IoT
+      networks, tokens, wallets, and network-data resources. Useful as the
+      authoritative pointer to per-vendor Network Server APIs and integration
+      patterns.
+    humanURL: https://github.com/helium/docs
+    baseURL: https://github.com/helium/docs
+    tags:
+      - Documentation
+      - Reference
+    properties:
+      - type: Repository
+        url: https://github.com/helium/docs
+common:
+  - type: Website
+    url: https://www.helium.com/
+  - type: Website
+    url: https://www.hellohelium.com/
+  - type: Documentation
+    url: https://docs.helium.com/
+  - type: GitHub
+    url: https://github.com/helium
+  - type: Foundation
+    url: https://www.helium.foundation/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/helium-systems-inc-
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
