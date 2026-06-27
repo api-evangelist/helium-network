@@ -118,7 +118,7 @@ common:
     url: https://www.helium.foundation/
   - type: LinkedIn
     url: https://www.linkedin.com/company/helium-systems-inc-
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.helium.com/llms.txt
 maintainers:
   - FN: Kin Lane
