@@ -106,6 +106,8 @@ apis:
       - type: Repository
         url: https://github.com/helium/docs
 common:
+  - type: DomainSecurity
+    url: security/helium-network-domain-security.yml
   - type: Website
     url: https://www.helium.com/
   - type: Website
