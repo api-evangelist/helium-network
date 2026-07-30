@@ -11,7 +11,19 @@ description: >-
   on-chain Solana programs for the Helium DAO and rewards, the open-source
   Helium-Program-Library and helium-wallet SDKs, and partner-operated Network
   Servers (e.g. Nova Labs, MeteoScientific).
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/helium-network.png
 tags:
   - Wireless
   - IoT
