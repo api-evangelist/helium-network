@@ -118,6 +118,15 @@ apis:
       - type: Repository
         url: https://github.com/helium/docs
 common:
+  - type: IssueTracker
+    url: https://github.com/helium/helium-program-library/issues
+  - type: Releases
+    url: https://github.com/helium/helium-program-library/releases
+  - type: SecurityPolicy
+    url: https://github.com/helium/helium-program-library/blob/master/SECURITY.md
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/helium/helium-program-library/blob/master/LICENSE
   - type: DomainSecurity
     url: security/helium-network-domain-security.yml
   - type: Website
