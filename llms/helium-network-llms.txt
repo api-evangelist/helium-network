@@ -1,0 +1,75 @@
+# Helium Documentation
+
+> Documentation for the Helium Network — covering IoT (LoRaWAN), Mobile (5G/WiFi), tokens (HNT, DC, SOL), wallets, and network data.
+
+This file contains links to documentation sections following the llmstxt.org standard.
+
+## Table of Contents
+
+- [Home](https://docs.helium.com/docs/home/home.md): Overview of the Helium Network, covering its LoRaWAN IoT and Wi-Fi mobile networks, Hotspot coverage model, and HNT token incentives.
+- [Helium API Providers](https://docs.helium.com/network-data/api-providers.md): Lists available Helium network data APIs, including the official Entity API and third-party providers.
+- [Entity API Documentation](https://docs.helium.com/network-data/entity-api.md): REST API reference for querying Hotspot metadata, wallet Hotspot lists, and OUI organization info.
+- [Legacy Blockchain Data](https://docs.helium.com/network-data/legacy-blockchain-data.md): How to access archived Helium L1 blockchain data via AWS S3 or torrent downloads.
+- [Helium Network Data](https://docs.helium.com/network-data/network-data.md): Introduction to Helium's data architecture spanning Solana on-chain data, Oracles, APIs, and legacy L1 data.
+- [Helium Oracle Data](https://docs.helium.com/network-data/oracle-data.md): How to access and decode Helium Oracle reward and data files stored in AWS S3, with protobuf schemas and code examples.
+- [Compression NFTs](https://docs.helium.com/network-data/solana/compression-nfts.md): How Helium uses Solana Compression NFTs and concurrent Merkle trees to represent Hotspots cost-efficiently on-chain.
+- [Helium Program Library](https://docs.helium.com/network-data/solana/helium-program-library.md): Overview of the Helium Program Library (HPL), the suite of Solana programs and SDKs for building on the Helium Network.
+- [Rewardable Entities](https://docs.helium.com/network-data/solana/rewardable-entities.md): How Hotspots are represented as Solana NFTs, including fetching by wallet, ECC key lookup, onboarding, and claiming rewards.
+- [Helium Data on Solana](https://docs.helium.com/network-data/solana-data.md): Developer guide to reading and writing Helium data on Solana, covering accounts, PDAs, tokens, Anchor SDKs, and program IDs.
+- [On-Device Onboarding](https://docs.helium.com/iot/onboard-a-hotspot/on-device.md): Onboard a single Hotspot by running gateway-rs on the gateway and submitting the add and assert-location transactions with the Helium CLI Wallet.
+- [Onboard a Hotspot](https://docs.helium.com/iot/onboard-a-hotspot.md): How to add a LoRaWAN gateway to the Helium IoT Network as a Hotspot, either on-device with gateway-rs or on a server with multi-gateway.
+- [balena + Raspberry Pi + RAK2287](https://docs.helium.com/iot/packet-forwarders/balena.md): Guide to building a Helium IoT Hotspot using a Raspberry Pi, RAK2287 concentrator, and balenaCloud.
+- [Dragino LPS8/DLOS8](https://docs.helium.com/iot/packet-forwarders/dragino.md): How to configure a Dragino LPS8 or DLOS8 gateway as a Helium IoT Hotspot.
+- [Kerlink Gateways](https://docs.helium.com/iot/packet-forwarders/kerlink.md): Community guides for running Kerlink gateways as Helium IoT Hotspots.
+- [RAK Concentrator + Raspberry Pi](https://docs.helium.com/iot/packet-forwarders/rak-concentrators.md): Guide for setting up a RAKwireless concentrator with a Raspberry Pi as a Helium IoT Hotspot.
+- [Server Onboarding](https://docs.helium.com/iot/onboard-a-hotspot/server.md): Aggregate multiple LoRaWAN gateways behind a single multi-gateway server that manages keypairs and routes packets through the Helium network. Best ...
+- [Multi-Gateway Server Setup](https://docs.helium.com/iot/onboard-a-hotspot/server-setup.md): Step-by-step guide to install, configure, and run the Helium multi-gateway server for LoRaWAN gateways.
+- [Build A LoRaWAN Device](https://docs.helium.com/network-iot/learn/build-a-device.md): Tutorial for building and testing a custom LoRaWAN device on the Helium Network using a Heltec CubeCell board.
+- [Understanding LoRaWAN](https://docs.helium.com/network-iot/learn/understanding-lorawan.md): Primer on LoRaWAN fundamentals covering data flow, device keys (DevEUI, JoinEUI, AppKey), and how Helium Hotspots act as gateways.
+- [Find A LoRaWAN Network Server Provider](https://docs.helium.com/iot/find-a-lns-provider.md): Directory of third-party LoRaWAN Network Server hosting providers in the Helium OpenLNS ecosystem.
+- [LoRaWAN Network Servers](https://docs.helium.com/iot/lorawan-network-servers.md): Introduction to LoRaWAN Network Servers on Helium, with options for managed LNS providers or self-hosting.
+- [LoRaWAN On Helium](https://docs.helium.com/iot/lorawan-on-helium.md): Technical overview of Helium's decentralized LoRaWAN architecture, including OUIs, the Packet Router, DevAddr slabs, and frame routing.
+- [LoRaWAN Roaming on Helium](https://docs.helium.com/iot/lorawan-roaming.md): Guide for configuring LoRaWAN roaming on Helium using the Config Service CLI to create routes and add EUI pairs.
+- [Add Device to ChirpStack via gRPC](https://docs.helium.com/iot/run-an-lns/chirpstack-add-device-grpc.md): Programmatically adding devices to ChirpStack using the gRPC API and JavaScript SDK.
+- [Add Device to ChirpStack via Console](https://docs.helium.com/iot/run-an-lns/chirpstack-add-device.md): Step-by-step walkthrough for adding a LoRaWAN device to ChirpStack via the web console.
+- [Advanced Configuration](https://docs.helium.com/iot/run-an-lns/advanced-configuration.md): Advanced LNS topics including Session Key Filters, max copies, EUI wildcards, delegate keys, and NGINX setup.
+- [Buy An Organizationally Unique Identifier](https://docs.helium.com/iot/run-an-lns/buy-an-oui.md): How to purchase a Helium OUI and DevAddr slab, including pricing, key generation, and DevAddr multiplexing.
+- [Common Issues](https://docs.helium.com/iot/run-an-lns/common-issues.md): Troubleshooting common Helium LNS problems like stopped data transfer, missing join requests, and routing errors.
+- [Configure ChirpStack](https://docs.helium.com/iot/run-an-lns/configure-chirpstack.md): Overview of ChirpStack LNS configuration for Helium, with links to Docker Compose and Kubernetes setup guides.
+- [Configure Routing Rules](https://docs.helium.com/iot/run-an-lns/configure-routing-rules.md): Using the Helium Config Service CLI to create routes, add device EUIs and DevAddrs, and register with the Packet Router.
+- [Custom MultiBuy Service](https://docs.helium.com/iot/run-an-lns/custom-multibuy.md): Run your own MultiBuy service to make per-Hotspot and per-region packet delivery decisions on your routes.
+- [ChirpStack on Docker Compose](https://docs.helium.com/iot/run-an-lns/docker-compose.md): Deploy ChirpStack on Docker Compose for non-production use, including configuration for Helium IoT.
+- [Fund An OUI Using HNT](https://docs.helium.com/iot/run-an-lns/fund-an-oui-using-hnt.md): How to convert HNT to Data Credits and delegate them to an OUI using the CLI Wallet or Helium Wallet App.
+- [Fund An Organizationally Unique Identifier](https://docs.helium.com/iot/run-an-lns/fund-an-oui.md): Overview of OUI funding options, DC pricing per uplink, minimum balance requirements, and escrow balance tracking.
+- [ChirpStack on Kubernetes](https://docs.helium.com/iot/run-an-lns/kubernetes.md): Deploy ChirpStack in a production-grade configuration on AWS EKS using Terraform and Helm charts.
+- [Run a LoRaWAN Network Server](https://docs.helium.com/iot/run-an-lns.md): Overview of the steps to self-host a LoRaWAN Network Server on Helium using OpenLNS and ChirpStack.
+- [The Mobile Network](https://docs.helium.com/mobile/5g-on-helium.md): Overview of the Helium Mobile Network, including decentralized Wi-Fi Hotspots and converted Passpoint networks for carrier offload.
+- [Cisco Catalyst 5520 Conversion Guide](https://docs.helium.com/mobile/helium-plus-Cisco-WLC-5520.md): Configure a Cisco Catalyst 5520 (AireOS) controller with Passpoint, RadSecProxy, and Hotspot 2.0 for Helium Mobile.
+- [Cisco Catalyst 9800 Conversion Guide](https://docs.helium.com/mobile/helium-plus-Cisco-WLC-9800.md): Configure a Cisco Catalyst 9800 (IOS XE) controller with RADIUS, Passpoint, and Hotspot 2.0 for Helium Mobile.
+- [Aruba Central Conversion Guide](https://docs.helium.com/mobile/helium-plus-aruba-central.md): Configure Aruba Central WLANs with native RadSec and Passpoint for Helium Mobile carrier offload.
+- [Aruba Conversion Guide](https://docs.helium.com/mobile/helium-plus-aruba.md): Configure an Aruba Mobility Controller with RadSecProxy, Passpoint, and Hotspot 2.0 for Helium Mobile.
+- [Cambium cnMaestro Conversion Guide](https://docs.helium.com/mobile/helium-plus-cambium-cnmaestro.md): Configure Cambium cnMaestro with RadSecProxy, WPA3 Enterprise, and Passpoint for Helium Mobile.
+- [Extreme ExtremeCloud IQ Conversion Guide](https://docs.helium.com/mobile/helium-plus-extreme.md): Configure ExtremeCloud IQ with RadSecProxy, Passpoint, and Hotspot 2.0 for Helium Mobile.
+- [Fortinet Conversion Guide](https://docs.helium.com/mobile/helium-plus-fortinet.md): Configure a Fortinet FortiGate with RadSecProxy, NAI realms, and Hotspot 2.0 for Helium Mobile.
+- [General Network Conversion Guide](https://docs.helium.com/mobile/helium-plus-generic.md): Brand-agnostic guide for configuring Hotspot 2.0 (Passpoint), RadSec, SSID, and VLAN settings to join Helium Mobile.
+- [Juniper Mist Conversion Guide](https://docs.helium.com/mobile/helium-plus-juniper-mist.md): Configure Juniper Mist APs with Passpoint, RadSec, and NAI realms for Helium Mobile carrier offload.
+- [Cisco Meraki Native RadSec Conversion Guide](https://docs.helium.com/mobile/helium-plus-meraki-plus.md): Helium Network Conversion Documentation
+- [Cisco Meraki RadSecProxy Conversion Guide](https://docs.helium.com/mobile/helium-plus-meraki.md): Configure Cisco Meraki with RadSecProxy, Passpoint SSID, and Hotspot 2.0 for Helium Mobile.
+- [MikroTik Conversion Guide](https://docs.helium.com/mobile/helium-plus-mikrotik.md): Configure MikroTik RouterOS v7 with CAPsMAN 2, RadSecProxy, and Passpoint for Helium Mobile.
+- [Onboard Converted Networks](https://docs.helium.com/mobile/wifi-conversion-onboarding.md): Self-serve onboarding of a converted Wi-Fi network, including token fees, key generation, and RADIUS certificate setup.
+- [RadSecProxy for Converted Networks](https://docs.helium.com/mobile/helium-plus-radsecproxy.md): RadSecProxy hardware requirements and deployment options (local and cloud/VPN) for proxying RADIUS to Helium Mobile.
+- [Ruckus Conversion Guide](https://docs.helium.com/mobile/helium-plus-ruckus.md): Configure a Ruckus SmartZone controller with RadSec, Hotspot 2.0, and Passpoint for Helium Mobile.
+- [Ubiquiti Conversion Guide](https://docs.helium.com/mobile/helium-plus-ubiquiti.md): Configure Ubiquiti UniFi with RadSec certificates, Passpoint RADIUS profile, and Helium SSID for carrier offload.
+- [Convert WiFi Networks for Carrier Offload](https://docs.helium.com/mobile/helium-plus-mobile.md): How to convert existing Passpoint-enabled Wi-Fi networks to join Helium Mobile for carrier offload using RadSec.
+- [WiFi Conversion Security FAQ](https://docs.helium.com/mobile/helium-plus-security-faq.md): Security considerations and best practices for converted WiFi networks on Helium
+- [Ban Check](https://docs.helium.com/mobile/bancheck.md): Tool to check whether a Helium Mobile Hotspot serial number has been banned for data falsification.
+- [Data Credit](https://docs.helium.com/tokens/data-credit.md): Data Credits (DC) explained — fixed USD value, HNT burn mechanism, and cost structure for IoT and Mobile data transfer.
+- [The Helium Network Token](https://docs.helium.com/tokens/hnt-token.md): The HNT token — max supply cap, halving schedule, burn-and-mint economics, and net emissions mechanism.
+- [The Solana Token](https://docs.helium.com/tokens/sol-token.md): Why Helium users need SOL for Solana transaction fees, how rent works, and how to swap HNT for SOL.
+- [CLI Wallet](https://docs.helium.com/wallets/cli-wallet.md): Helium CLI wallet reference — installation, account creation, multi-wallet management, and L1-to-Solana migration.
+- [Helium Wallet App](https://docs.helium.com/wallets/helium-wallet-app.md): Helium Wallet mobile app — account setup, supported tokens, sending/receiving, address book, and security settings.
+- [L1 Migration Tool](https://docs.helium.com/wallets/l1-migrate.md): Tool for migrating a Helium L1 wallet address to Solana by seeding it with a small SOL balance.
+- [Ledger](https://docs.helium.com/wallets/ledger-wallet.md): Using a Ledger hardware wallet with Helium tokens via the Solana app, including setup and migration steps.
+- [Third-Party Wallets](https://docs.helium.com/wallets/third-party-wallets.md): How to use any Solana-compatible wallet (like Phantom) with Helium by exporting your private key.
+- [Wallet Seed Phrase](https://docs.helium.com/wallets/wallet-seed-phrase.md): What a wallet seed phrase is, 12-word vs 24-word security differences, and best practices for safe storage.
+- [Wallets](https://docs.helium.com/docs/wallets/wallets.md): Introduction to Helium's Solana-based wallets, covering public/private keys, seed phrases, and wallet security basics.
