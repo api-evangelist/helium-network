@@ -50,6 +50,11 @@ apis:
       - IoT
       - LoRaWAN
       - Devices
+      - Webhook
+    tags_raw:
+      - IoT
+      - LoRaWAN
+      - Devices
       - Webhooks
     properties:
       - type: Documentation
@@ -80,6 +85,11 @@ apis:
     humanURL: https://github.com/helium/helium-wallet-rs
     baseURL: https://github.com/helium/helium-wallet-rs
     tags:
+      - Wallets
+      - CLI
+      - Rust
+      - Solana
+    tags_raw:
       - Wallet
       - CLI
       - Rust
