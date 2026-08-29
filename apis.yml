@@ -11,6 +11,18 @@ description: >-
   on-chain Solana programs for the Helium DAO and rewards, the open-source
   Helium-Program-Library and helium-wallet SDKs, and partner-operated Network
   Servers (e.g. Nova Labs, MeteoScientific).
+deliveryModel:
+  model: self-hosted
+  license: Apache-2.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
