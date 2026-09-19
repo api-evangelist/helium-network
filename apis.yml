@@ -120,6 +120,10 @@ apis:
     tags:
       - Protobuf
       - Protocol
+      - Schema
+    tags_raw:
+      - Protobuf
+      - Protocol
       - Schemas
     properties:
       - type: Repository
