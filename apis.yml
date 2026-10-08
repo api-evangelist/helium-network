@@ -147,6 +147,12 @@ apis:
       - type: Repository
         url: https://github.com/helium/docs
 common:
+  - type: Plans
+    url: plans/helium-network-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/helium-network-rate-limits.yml
+  - type: FinOps
+    url: finops/helium-network-finops.yml
   - url: https://www.helium.com/blog
     type: Blog
   - type: PublicAPIsListing
